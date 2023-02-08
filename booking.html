@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie Booking Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Movie Booking Website</h1>
+    </header>
+    <main>
+      <form>
+        <h2>Choose a movie:</h2>
+        <select id="movies">
+          <option value="">--Select a movie--</option>
+          <option value="movie1">KGF</option>
+          <option value="movie2">SUPERMAN</option>
+          <option value="movie3">AVATAR</option>
+        </select>
+        <h2>Choose a date:</h2>
+        <input type="date" id="date">
+        <h2>Choose a time:</h2>
+        <select id="times">
+          <option value="">--Select a time--</option>
+          <option value="time1">10:00 AM</option>
+          <option value="time2">1:00 PM</option>
+          <option value="time3">4:00 PM</option>
+          <option value="time4">7:00 PM</option>
+        </select>
+        <h2>Number of tickets:</h2>
+        <input type="number" id="tickets" min="1" max="10">
+        <br><br>
+        <input type="button" value="Book Tickets" onclick="bookTickets()">
+      </form>
+      <div id="result"></div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Movie Booking Website</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
